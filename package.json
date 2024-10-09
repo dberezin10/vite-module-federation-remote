@@ -1,12 +1,11 @@
 {
-  "name": "remote",
+  "name": "remote-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host 0.0.0.0 --port 6400",
-    "build": "tsc -b && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "dev": "vite --port=6400 --strictPort",
+    "build": "vite build",
     "preview": "vite preview --port=6400 --strictPort",
     "deploy": "npm run build && npm run preview"
   },

@@ -7,12 +7,12 @@ export default defineConfig({
   plugins: [
       react(),
       federation({
-        name: 'remote',
+        name: 'remoteApp',
         filename: 'remoteEntry.js',
         exposes: {
-            './RemoteComponent': './src/RemoteComponent.tsx',
+          './RemoteComponent': './src/RemoteComponent',
         },
-        shared: ['react', 'react-router-dom', 'react-dom'],
+        shared: ['react', 'react-dom'],
       }),
   ],
     build: {

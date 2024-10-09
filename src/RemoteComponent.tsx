@@ -2,11 +2,11 @@
 const RemoteComponent = () => {
 
   return (
-    <h1>
+    <div>
         <br/>
         <br/>
         репозиторий remote
-    </h1>
+    </div>
   )
 }
 
