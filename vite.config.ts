@@ -12,6 +12,9 @@ export default defineConfig({
         exposes: {
           './RemoteComponent': './src/RemoteComponent',
         },
+        remotes: {
+            hostApp: 'http://localhost:6500/assets/remoteEntry.js',
+        },
         shared: ['react', 'react-dom'],
       }),
   ],

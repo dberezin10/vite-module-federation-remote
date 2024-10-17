@@ -10,6 +10,7 @@
     "deploy": "npm run build && npm run preview"
   },
   "dependencies": {
+    "@ippon-tool/gitlab-ci-cd-example": "^0.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.16.0"
